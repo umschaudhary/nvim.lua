@@ -5,7 +5,7 @@ local sources = {
 	formatting.eslint,
 	formatting.autopep8,
 	formatting.stylua,
-	formatting.rubocop,
+	--formatting.rubocop,
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
@@ -20,7 +20,8 @@ null_ls.setup({
 				buffer = bufnr,
 				callback = function()
 					-- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-					vim.lsp.buf.formatting_sync()
+					--vim.lsp.buf.formatting_sync()
+					vim.lsp.buf.formatting_seq_sync()
 				end,
 			})
 		end

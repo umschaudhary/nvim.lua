@@ -38,6 +38,12 @@ require("lspconfig")["pyright"].setup({
 	capabilities = capabilities,
 	flags = lsp_flags,
 })
+require("lspconfig")["solargraph"].setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	flags = lsp_flags,
+})
+
 require("lspconfig")["tsserver"].setup({
 	on_attach = on_attach,
 	capabilities = capabilities,

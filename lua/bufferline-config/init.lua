@@ -24,5 +24,6 @@ require("bufferline").setup({
 		enforce_regular_tabs = false,
 		always_show_bufferline = true,
 		separator_style = "thin",
+		name_modifier = ":t",
 	},
 })
