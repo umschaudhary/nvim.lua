@@ -12,6 +12,8 @@ return require("packer").startup(function()
 	use("windwp/nvim-ts-autotag")
 	use("windwp/nvim-autopairs")
 	use("preservim/nerdcommenter")
+	use("norcalli/nvim-colorizer.lua")
+	use("Darazaki/indent-o-matic")
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release
 	})
@@ -20,6 +22,8 @@ return require("packer").startup(function()
 
 	use({ "nvim-telescope/telescope.nvim", requires = { { "nvim-lua/plenary.nvim" } } })
 	use("jose-elias-alvarez/null-ls.nvim") --formatter
+	use("ur4ltz/surround.nvim")
+	use("stevearc/aerial.nvim")
 	-- LSP
 	use("neovim/nvim-lspconfig") -- Configurations for Nvim LSP
 	use("hrsh7th/nvim-cmp") -- Autocompletion plugin
