@@ -57,6 +57,9 @@ map("n", "<C-L>", "<C-W><C-L>", {})
 map("n", "<C-H>", "<C-W><C-H>", {})
 map("n", "<C-K>", "<C-W><C-K>", {})
 
+map("n", "<leader>z", "<c-w>_ | <c-w>|", {})
+map("n", "<leader>o", "<c-w>=", {})
+
 --navigation
 map("i", "<C-h>", "<Left>", {})
 map("i", "<C-k>", "<UP>", {})
@@ -68,3 +71,9 @@ map("n", "<leader>w", ":m-2<CR>", opts)
 
 map("n", "<leader><space>", ":noh<cr>:call clearmatches()<cr>", opts)
 map("n", "<leader>r", ":luafile %<CR>", opts)
+-- toggle term
+--
+map("n", "<leader>tt", ":ToggleTerm direction=float<CR>", opts)
+map("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>", opts)
+map("n", "<leader>tv", ":ToggleTerm direction=vertical<CR>", opts)
+

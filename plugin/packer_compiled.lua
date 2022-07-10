@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -174,10 +179,10 @@ _G.packer_plugins = {
     path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-fugitive"] = {
+  ["toggleterm.nvim"] = {
     loaded = true,
-    path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/vim-fugitive",
-    url = "https://github.com/pope/vim-fugitive"
+    path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["vim-startify"] = {
     loaded = true,

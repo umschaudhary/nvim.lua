@@ -15,13 +15,11 @@ return require("packer").startup(function()
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release
 	})
+	use("lukas-reineke/indent-blankline.nvim") -- block lines
+	use({ "akinsho/toggleterm.nvim", tag = "v1.*" }) -- toggle term
 
-	use({
-		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/plenary.nvim" } },
-	})
+	use({ "nvim-telescope/telescope.nvim", requires = { { "nvim-lua/plenary.nvim" } } })
 	use("jose-elias-alvarez/null-ls.nvim") --formatter
-
 	-- LSP
 	use("neovim/nvim-lspconfig") -- Configurations for Nvim LSP
 	use("hrsh7th/nvim-cmp") -- Autocompletion plugin
