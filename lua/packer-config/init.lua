@@ -6,7 +6,6 @@ return require("packer").startup(function()
 	use("kyazdani42/nvim-tree.lua")
 
 	use("nvim-lualine/lualine.nvim") --lualine
-	use("romgrk/barbar.nvim")
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("nvim-treesitter/nvim-treesitter-refactor")
 	use("windwp/nvim-ts-autotag")
@@ -14,8 +13,12 @@ return require("packer").startup(function()
 	use("preservim/nerdcommenter")
 	use("norcalli/nvim-colorizer.lua")
 	use("Darazaki/indent-o-matic")
+	use("ggandor/lightspeed.nvim")
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release
+	})
+	use({
+		"akinsho/bufferline.nvim", -- tag =  'v2.*'
 	})
 	use("lukas-reineke/indent-blankline.nvim") -- block lines
 	use({ "akinsho/toggleterm.nvim", tag = "v1.*" }) -- toggle term

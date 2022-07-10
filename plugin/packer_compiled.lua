@@ -79,10 +79,10 @@ _G.packer_plugins = {
     path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
   },
-  ["barbar.nvim"] = {
+  ["bufferline.nvim"] = {
     loaded = true,
-    path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/barbar.nvim",
-    url = "https://github.com/romgrk/barbar.nvim"
+    path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -108,6 +108,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/indent-o-matic",
     url = "https://github.com/Darazaki/indent-o-matic"
+  },
+  ["lightspeed.nvim"] = {
+    loaded = true,
+    path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/lightspeed.nvim",
+    url = "https://github.com/ggandor/lightspeed.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
