@@ -16,6 +16,7 @@ require "lspconfig".efm.setup {
             javascript = { prettier },
             typescriptreact = { prettier },
             yaml = { prettier },
+            ruby= { rubocop },
         },
     },
 }

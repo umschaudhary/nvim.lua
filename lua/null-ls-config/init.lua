@@ -6,7 +6,7 @@ local sources = {
 	formatting.autopep8,
 	formatting.stylua,
 	--formatting.prettier,
-	--formatting.rubocop,
+	formatting.rubocop,
 }
 
 null_ls.setup({ sources = sources })

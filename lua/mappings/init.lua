@@ -7,7 +7,6 @@ map("n", "<leader>v", ":NvimTreeFindFileToggle<CR>", opts)
 
 -- barbar mappings
 -- Move to previous/next
-map("n", "gb", "<Cmd>BufferLineCyclePrev<CR>", opts)
 map("n", "gt", "<Cmd>BufferLineCycleNext<CR>", opts)
 
 -- Goto buffer in position...
@@ -67,4 +66,11 @@ map("n", "<leader>tt", ":ToggleTerm direction=float<CR>", opts)
 map("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>", opts)
 map("n", "<leader>tv", ":ToggleTerm direction=vertical<CR>", opts)
 -- formatter
-map("n", "<leader>pp", ":Format<CR>", opts)
+map("n", "<leader>pp", ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
+
+--git signs
+map("n", "gb", "<Cmd>Gitsigns toggle_current_line_blame<CR>", opts)
+
+
+-- buffer
+map("n", "<leader>bd", ":bdelete<CR>", opts)
