@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/aerial.nvim",
     url = "https://github.com/stevearc/aerial.nvim"
   },
-  ["bufferline.nvim"] = {
-    loaded = true,
-    path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
-    url = "https://github.com/akinsho/bufferline.nvim"
-  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -158,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-tabline"] = {
+    loaded = true,
+    path = "/Users/umschaudhary/.local/share/nvim/site/pack/packer/start/nvim-tabline",
+    url = "https://github.com/seblj/nvim-tabline"
   },
   ["nvim-tree.lua"] = {
     loaded = true,

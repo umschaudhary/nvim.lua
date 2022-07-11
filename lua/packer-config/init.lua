@@ -17,9 +17,7 @@ return require("packer").startup(function()
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release
 	})
-	use({
-		"akinsho/bufferline.nvim", -- tag =  'v2.*'
-	})
+	use('seblj/nvim-tabline')
 	use ("jose-elias-alvarez/null-ls.nvim")
 
 	use("lukas-reineke/indent-blankline.nvim") -- block lines
