@@ -66,3 +66,5 @@ map("n", "<leader>r", ":luafile %<CR>", opts)
 map("n", "<leader>tt", ":ToggleTerm direction=float<CR>", opts)
 map("n", "<leader>th", ":ToggleTerm direction=horizontal<CR>", opts)
 map("n", "<leader>tv", ":ToggleTerm direction=vertical<CR>", opts)
+-- formatter
+map("n", "<leader>pp", ":Format<CR>", opts)

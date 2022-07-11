@@ -14,17 +14,19 @@ return require("packer").startup(function()
 	use("norcalli/nvim-colorizer.lua")
 	use("Darazaki/indent-o-matic")
 	use("ggandor/lightspeed.nvim")
+	use("ggandor/lightspeed.nvim")
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release
 	})
 	use({
 		"akinsho/bufferline.nvim", -- tag =  'v2.*'
 	})
+	use ("lukas-reineke/lsp-format.nvim")
+
 	use("lukas-reineke/indent-blankline.nvim") -- block lines
 	use({ "akinsho/toggleterm.nvim", tag = "v1.*" }) -- toggle term
 
 	use({ "nvim-telescope/telescope.nvim", requires = { { "nvim-lua/plenary.nvim" } } })
-	use("jose-elias-alvarez/null-ls.nvim") --formatter
 	use("ur4ltz/surround.nvim")
 	use("stevearc/aerial.nvim")
 	-- LSP
