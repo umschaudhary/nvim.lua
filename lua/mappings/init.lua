@@ -10,18 +10,6 @@ map("n", "<leader>v", ":NvimTreeFindFileToggle<CR>", opts)
 map("n", "gt", "<Cmd>tabNext<CR>", opts)
 map("n", "gb", "<Cmd>tabprevious<CR>", opts)
 
--- Goto buffer in position...
-map("n", "<leader>b1", "<Cmd>tabdo 1<CR>", opts)
-map("n", "<leader>b2", "<Cmd>tabdo 2<CR>", opts)
-map("n", "<leader>b3", "<Cmd>tabdo 3<CR>", opts)
-map("n", "<leader>b4", "<Cmd>tabdo 4<CR>", opts)
-map("n", "<leader>b5", "<Cmd>tabdo 5<CR>", opts)
-map("n", "<leader>b6", "<Cmd>tabdo 6<CR>", opts)
-map("n", "<leader>b7", "<Cmd>tabdo 7<CR>", opts)
-map("n", "<leader>b8", "<Cmd>tabdo 8<CR>", opts)
-map("n", "<leader>b9", "<Cmd>tabdo 9<CR>", opts)
-map("n", "<leader>b0", "<Cmd>tablast<CR>", opts)
-
 --telescope
 map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 map("n", "<leader>fg", ":Telescope live_grep<CR>", opts)

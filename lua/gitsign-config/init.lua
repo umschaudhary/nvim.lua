@@ -1,4 +1,11 @@
 require("gitsigns").setup({
+	 current_line_blame_opts = {
+	    virt_text = true,
+	    virt_text_color = 'white', 
+	    virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+	    delay = 1000,
+	    ignore_whitespace = false,
+	  },
 	on_attach = function(bufnr)
 		local gs = package.loaded.gitsigns
 

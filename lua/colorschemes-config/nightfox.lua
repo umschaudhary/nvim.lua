@@ -9,4 +9,7 @@ require("nightfox").setup({
 		},
 	},
 })
-vim.cmd("colorscheme duskfox")
+vim.cmd[[
+  colorscheme duskfox
+  highlight CursorLine guibg=#232831 ctermbg=234
+]]
