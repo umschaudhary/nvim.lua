@@ -61,6 +61,8 @@ map("n", "<leader>bd", ":bdelete<CR>", opts)
 
 -- vim git fugitive
 map("n", "<leader>ga", ":Git add %<CR>", opts)
+map("n", "<leader>gA", ":Git add .<CR>", opts)
 map("n", "<leader>gr", ":Git restore --staged %<CR>", opts)
+map("n", "<leader>gR", ":Git restore --staged %<CR>", opts)
 map("n", "<leader>gs", ":G <CR>", opts)
 map("n", "<leader>gp", ":Git push <CR>", opts)

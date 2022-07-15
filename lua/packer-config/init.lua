@@ -35,4 +35,5 @@ return require("packer").startup(function()
 	use("onsails/lspkind.nvim") -- icons on completion
 	use("mhinz/vim-startify")
 	use("mattn/emmet-vim")
+	use("tpope/vim-fugitive")
 end)
