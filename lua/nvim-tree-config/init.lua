@@ -1,6 +1,6 @@
 -- OR setup with some options
 require("nvim-tree").setup({
-	auto_reload_on_write = false,
+	auto_reload_on_write = true,
 	diagnostics = { enable = true },
 	view = {
 		adaptive_size = true,
@@ -16,6 +16,7 @@ require("nvim-tree").setup({
 				{ key = "R", action = "refresh" },
 				{ key = "ma", action = "create" },
 				{ key = "md", action = "remove" },
+				{ key = "mr", action = "rename" },
 				{ key = "f", action = "live_filter" },
 				{ key = "F", action = "clear_live_filter" },
 			},
