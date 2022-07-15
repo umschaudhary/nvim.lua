@@ -16,7 +16,7 @@ set.foldlevel = 99
 set.encoding= "UTF-8"
 
 -- TextEdit might fail if hidden is not set.
-set.hidden = false
+set.hidden = true
 set.backup = false
 set.writebackup = false
 set.cursorline = true

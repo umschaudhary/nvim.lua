@@ -53,10 +53,8 @@ map("n", "<leader>tv", ":ToggleTerm direction=vertical<CR>", opts)
 -- formatter
 map("n", "<leader>pp", ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
 
---git signs
-map("n", "<leader>gb", "<Cmd>Gitsigns toggle_current_line_blame<CR>", opts)
-
 -- buffer
+map("n", "<leader>bd", ":bdelete<CR>", opts)
 map("n", "<leader>bd", ":bdelete<CR>", opts)
 
 -- vim git fugitive
@@ -67,3 +65,5 @@ map("n", "<leader>gR", ":Git restore --staged %<CR>", opts)
 map("n", "<leader>gc", ":Git commit <CR>", opts)
 map("n", "<leader>gs", ":G <CR>", opts)
 map("n", "<leader>gp", ":Git push <CR>", opts)
+map("n", "<leader>gb", ":Git blame<CR>", opts)
+map("n", "<leader>gl", ":Git log<CR>", opts)
