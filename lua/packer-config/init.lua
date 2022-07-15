@@ -34,4 +34,5 @@ return require("packer").startup(function()
 	use("L3MON4D3/LuaSnip") -- Snippets plugin
 	use("onsails/lspkind.nvim") -- icons on completion
 	use("mhinz/vim-startify")
+	use("mattn/emmet-vim")
 end)

@@ -33,22 +33,24 @@ local lsp_flags = {
 	-- This is the default in Nvim 0.7+
 	debounce_text_changes = 150,
 }
-require("lspconfig")["pyright"].setup({
+local lspconfig = require("lspconfig")
+
+lspconfig["pyright"].setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	flags = lsp_flags,
 })
-require("lspconfig")["solargraph"].setup({
+lspconfig["solargraph"].setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	flags = lsp_flags,
 })
 
-require("lspconfig")["tsserver"].setup({
+lspconfig["tsserver"].setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	flags = lsp_flags,
 })
-require("lspconfig").vimls.setup({
+lspconfig.vimls.setup({
 	on_attach = require("aerial").on_attach,
 })

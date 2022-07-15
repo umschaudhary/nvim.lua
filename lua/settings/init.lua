@@ -54,3 +54,5 @@ vim.cmd [[
   filetype off
   filetype plugin on
 ]]
+vim.g.user_emmet_leader_key=','
+
