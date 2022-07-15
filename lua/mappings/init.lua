@@ -58,3 +58,9 @@ map("n", "<leader>gb", "<Cmd>Gitsigns toggle_current_line_blame<CR>", opts)
 
 -- buffer
 map("n", "<leader>bd", ":bdelete<CR>", opts)
+
+-- vim git fugitive
+map("n", "<leader>ga", ":Git add %<CR>", opts)
+map("n", "<leader>gr", ":Git restore --staged %<CR>", opts)
+map("n", "<leader>gs", ":G <CR>", opts)
+map("n", "<leader>gp", ":Git push <CR>", opts)
