@@ -12,7 +12,7 @@ return require("packer").startup(function()
 	use("windwp/nvim-autopairs")
 	use("preservim/nerdcommenter")
 	use("norcalli/nvim-colorizer.lua")
-	use("Darazaki/indent-o-matic")
+	--use("Darazaki/indent-o-matic")
 	use("ggandor/lightspeed.nvim")
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release

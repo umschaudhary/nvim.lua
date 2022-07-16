@@ -12,6 +12,9 @@ set.splitbelow = true
 set.ruler = false
 set.laststatus = 2
 set.foldmethod = "indent"
+--set.foldmethod = "expr"
+--set.foldexpr = "nvim_treesitter#foldexpr()"
+
 set.foldlevel = 99
 set.encoding= "UTF-8"
 

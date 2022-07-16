@@ -55,7 +55,6 @@ map("n", "<leader>pp", ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
 
 -- buffer
 map("n", "<leader>bd", ":bdelete<CR>", opts)
-map("n", "<leader>bd", ":bdelete<CR>", opts)
 
 -- vim git fugitive
 map("n", "<leader>ga", ":Git add %<CR>", opts)
