@@ -2,7 +2,7 @@ local null_ls = require("null-ls")
 local formatting = null_ls.builtins.formatting
 
 local sources = {
-	null_ls.builtins.diagnostics.eslint_d,
+	--null_ls.builtins.diagnostics.eslint_d,
 	formatting.autopep8,
 	formatting.stylua,
 	--formatting.prettier,
