@@ -17,8 +17,8 @@ return require("packer").startup(function()
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release
 	})
-	use('seblj/nvim-tabline') --tabs
-	use ("jose-elias-alvarez/null-ls.nvim") --plugin for formatting
+	use("seblj/nvim-tabline") --tabs
+	use("jose-elias-alvarez/null-ls.nvim") --plugin for formatting
 
 	use("lukas-reineke/indent-blankline.nvim") -- block lines
 	use({ "akinsho/toggleterm.nvim", tag = "v1.*" }) -- toggle term
@@ -37,4 +37,5 @@ return require("packer").startup(function()
 	--use("mhinz/vim-startify")
 	use("mattn/emmet-vim") --emmet html and css
 	use("tpope/vim-fugitive") --git integration
+	use("lewis6991/impatient.nvim")
 end)
