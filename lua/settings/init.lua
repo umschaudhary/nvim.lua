@@ -76,7 +76,7 @@ vim.cmd[[
   autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
   autocmd BufRead,BufNewFile *.css,*.scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
   autocmd BufRead,BufNewFile *.css,*.scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd BufRead,BufNewFile *.js,*.jsx,*.rb setlocal tabstop=2 shiftwidth=2 softtabstop=2
+  autocmd BufRead,BufNewFile *.js,*.rb setlocal tabstop=2 shiftwidth=2 softtabstop=2
   autocmd BufRead,BufNewFile *.json setlocal tabstop=2 shiftwidth=2 softtabstop=2
   autocmd BufRead,BufNewFile *.cpp setlocal tabstop=2 shiftwidth=2 softtabstop=2
   autocmd BufRead,BufNewFile *.ts,*.tsx,*.dart setlocal tabstop=2 shiftwidth=2 softtabstop=2

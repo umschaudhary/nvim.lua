@@ -12,7 +12,7 @@ return require("packer").startup(function()
 	use("windwp/nvim-autopairs") -- autopair plugin
 	use("preservim/nerdcommenter") -- commnter plugin
 	use("norcalli/nvim-colorizer.lua") -- show colors on live based on color codes
-	--use("Darazaki/indent-o-matic")
+	use("Darazaki/indent-o-matic")
 	use("ggandor/lightspeed.nvim") -- search tool
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release

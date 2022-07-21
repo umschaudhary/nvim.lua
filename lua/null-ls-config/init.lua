@@ -5,7 +5,7 @@ local sources = {
 	--null_ls.builtins.diagnostics.eslint,
 	formatting.autopep8,
 	formatting.stylua,
-	--formatting.prettier,
+	formatting.prettier,
 	formatting.rubocop,
 }
 
