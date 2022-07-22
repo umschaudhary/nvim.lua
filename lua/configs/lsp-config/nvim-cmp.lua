@@ -1,7 +1,7 @@
 local luasnip_ok, luasnip = pcall(require, "luasnip")
 local cmp_ok, cmp = pcall(require, "cmp")
 local lspkind_ok, lspkind = pcall(require, "lspkind")
-local vscode_ok, vscode = pcall(require, "luasnip.loaders.from_vscode")
+local vscode_ok, vscode = pcall(require, "luasnip/loaders/from_vscode")
 
 if luasnip_ok and cmp_ok and lspkind_ok and vscode_ok then
 	local kind_icons = {

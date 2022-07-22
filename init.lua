@@ -7,6 +7,7 @@ end
 for _, source in ipairs({
 	"settings",
 	"mappings",
+	"configs.better-escape-config",
 	"configs.colorschemes-config.nightfox",
 	"configs.nvim-tree-config",
 	"configs.lsp-config.server",

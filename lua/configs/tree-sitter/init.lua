@@ -19,6 +19,17 @@ treesitter.setup({
 		enable = true,
 		enable_autocmd = false,
 	},
+	incremental_selection = { enable = true },
+	autopairs = { enable = true },
+	rainbow = {
+		enable = true,
+		disable = { "html" },
+		extended_mode = false,
+		max_file_lines = nil,
+	},
+	autotag = {
+		enable = true,
+	},
 	refactor = {
 		highlight_definitions = {
 			enable = true,
@@ -30,17 +41,6 @@ treesitter.setup({
 			keymaps = {
 				smart_rename = "grr",
 			},
-		},
-		incremental_selection = { enable = true },
-		autopairs = { enable = true },
-		rainbow = {
-			enable = true,
-			disable = { "html" },
-			extended_mode = false,
-			max_file_lines = nil,
-		},
-		autotag = {
-			enable = true,
 		},
 		navigation = {
 			enable = true,

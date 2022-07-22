@@ -58,6 +58,7 @@ vim.cmd [[
   filetype plugin on
 ]]
 -- vim.g.user_emmet_leader_key=','
+vim.g.better_escape_shortcut='jj'
 
 function _G.set_terminal_keymaps()
   local opts = {noremap = true}
@@ -70,7 +71,6 @@ function _G.set_terminal_keymaps()
 end
 
 vim.cmd('autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()')
-
 
 -- vim.cmd[[
 --   autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
