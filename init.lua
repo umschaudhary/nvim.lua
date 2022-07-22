@@ -1,21 +1,34 @@
-require("impatient")
-require("settings")
 require("packer-config")
-require("configs.colorschemes-config.nightfox")
-require("configs.nvim-tree-config")
-require("configs.lsp-config.server")
-require("configs.lsp-config.nvim-cmp")
-require("configs.lua-line")
-require("configs.tabnine-config")
-require("configs.tree-sitter")
-require("configs.autopair-config")
-require("configs.gitsign-config")
-require("configs.blank-line-config")
-require("configs.toggle-term-config")
-require("configs.surround-config")
-require("configs.aerial-config")
-require("configs.colorizer-config")
-require("configs.indent-o-matic-config")
-require("configs.lightspeed-config")
-require("configs.null-ls-config")
-require("mappings")
+local impatient_ok, impatient = pcall(require, "impatient")
+if impatient_ok then
+	impatient.enable_profile()
+end
+
+for _, source in ipairs({
+	"settings",
+	"mappings",
+	"configs.colorschemes-config.nightfox",
+	"configs.nvim-tree-config",
+	"configs.lsp-config.server",
+	"configs.lsp-config.nvim-cmp",
+	"configs.lua-line",
+	"configs.tabnine-config",
+	"configs.tree-sitter",
+	"configs.autopair-config",
+	"configs.gitsign-config",
+	"configs.blank-line-config",
+	"configs.toggle-term-config",
+	"configs.surround-config",
+	"configs.aerial-config",
+	"configs.colorizer-config",
+	"configs.indent-o-matic-config",
+	"configs.lightspeed-config",
+	"configs.null-ls-config",
+	"configs.nvim-lsp-installer",
+	"configs.comment",
+}) do
+	local status_ok, fault = pcall(require, source)
+	if not status_ok then
+		vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault)
+	end
+end

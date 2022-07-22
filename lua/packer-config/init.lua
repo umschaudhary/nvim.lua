@@ -10,7 +10,7 @@ return require("packer").startup(function()
 	use("nvim-treesitter/nvim-treesitter-refactor") --extra features on top of treesitter eg: smart rename
 	use("windwp/nvim-ts-autotag") --required by autopairs
 	use("windwp/nvim-autopairs") -- autopair plugin
-	use("preservim/nerdcommenter") -- commnter plugin
+	-- use("preservim/nerdcommenter") -- commnter plugin
 	use("norcalli/nvim-colorizer.lua") -- show colors on live based on color codes
 	use("Darazaki/indent-o-matic")
 	use("ggandor/lightspeed.nvim") -- search tool
@@ -28,6 +28,7 @@ return require("packer").startup(function()
 	use("stevearc/aerial.nvim") -- code outline plugin, handy in large files
 
 	-- LSP
+	use("williamboman/nvim-lsp-installer")
 	use("neovim/nvim-lspconfig") -- Configurations for Nvim LSP
 	use("hrsh7th/nvim-cmp") -- Autocompletion plugin
 	use("hrsh7th/cmp-buffer") --cmp buffer source
@@ -39,4 +40,6 @@ return require("packer").startup(function()
 	use("mattn/emmet-vim") --emmet html and css
 	use("tpope/vim-fugitive") --git integration
 	use("lewis6991/impatient.nvim")
+	use("numToStr/Comment.nvim")
+
 end)

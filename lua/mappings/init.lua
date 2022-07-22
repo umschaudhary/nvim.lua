@@ -8,7 +8,7 @@ map("n", "<leader>v", ":NvimTreeFindFileToggle<CR>", opts)
 -- barbar mappings
 -- Move to previous/next
 map("n", "gt", "<Cmd>tabNext<CR>", opts)
-map("n", "gb", "<Cmd>tabprevious<CR>", opts)
+map("n", "gT", "<Cmd>tabprevious<CR>", opts)
 
 --telescope
 map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
