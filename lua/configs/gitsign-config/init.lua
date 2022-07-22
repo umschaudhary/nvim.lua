@@ -1,4 +1,9 @@
-require("gitsigns").setup({
+local status_ok, GitSign = pcall(require, "gitsigns")
+if not status_ok then
+	return
+end
+
+GitSign.setup({
 	current_line_blame = true,
 	current_line_blame_opts = {
 		virt_text = true,

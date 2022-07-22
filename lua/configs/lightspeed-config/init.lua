@@ -1,4 +1,5 @@
--- NOTE: This is just illustration - there is no need to copy/paste the
--- defaults, or call `setup` at all, if you do not want to change anything.
-
-require("lightspeed").setup({})
+local status_ok, Speed = pcall(require, "lightspeed")
+if not status_ok then
+	return
+end
+Speed.setup({})

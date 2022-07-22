@@ -57,7 +57,7 @@ vim.cmd [[
   filetype off
   filetype plugin on
 ]]
-vim.g.user_emmet_leader_key=','
+-- vim.g.user_emmet_leader_key=','
 
 function _G.set_terminal_keymaps()
   local opts = {noremap = true}
@@ -72,12 +72,12 @@ end
 vim.cmd('autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()')
 
 
-vim.cmd[[
-  autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd BufRead,BufNewFile *.css,*.scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd BufRead,BufNewFile *.css,*.scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd BufRead,BufNewFile *.js,*.rb setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd BufRead,BufNewFile *.json setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd BufRead,BufNewFile *.cpp setlocal tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd BufRead,BufNewFile *.ts,*.tsx,*.dart setlocal tabstop=2 shiftwidth=2 softtabstop=2
-]]
+-- vim.cmd[[
+--   autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+--   autocmd BufRead,BufNewFile *.css,*.scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
+--   autocmd BufRead,BufNewFile *.css,*.scss setlocal tabstop=2 shiftwidth=2 softtabstop=2
+--   autocmd BufRead,BufNewFile *.js,*.rb setlocal tabstop=2 shiftwidth=2 softtabstop=2
+--   autocmd BufRead,BufNewFile *.json setlocal tabstop=2 shiftwidth=2 softtabstop=2
+--   autocmd BufRead,BufNewFile *.cpp setlocal tabstop=2 shiftwidth=2 softtabstop=2
+--   autocmd BufRead,BufNewFile *.ts,*.tsx,*.dart setlocal tabstop=2 shiftwidth=2 softtabstop=2
+-- ]]

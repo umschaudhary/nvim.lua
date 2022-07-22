@@ -26,6 +26,7 @@ return require("packer").startup(function()
 	use({ "nvim-telescope/telescope.nvim", requires = { { "nvim-lua/plenary.nvim" } } }) --project wise search
 	use("ur4ltz/surround.nvim") -- surrounding , parenthesis, brackets, quotes etc
 	use("stevearc/aerial.nvim") -- code outline plugin, handy in large files
+	use("p00f/nvim-ts-rainbow")
 
 	-- LSP
 	use("williamboman/nvim-lsp-installer")
@@ -41,5 +42,4 @@ return require("packer").startup(function()
 	use("tpope/vim-fugitive") --git integration
 	use("lewis6991/impatient.nvim")
 	use("numToStr/Comment.nvim")
-
 end)

@@ -1,3 +1,16 @@
+local lsp_ok, lspconfig = pcall(require, "lspconfig")
+local cmp_ok, cmp_cap = pcall(require, "cmp_nvim_lsp")
+local aerial_ok, aerial = pcall(require, "aerial")
+
+if not lsp_ok then
+	return
+end
+if not cmp_ok then
+	return
+end
+if not aerial_ok then
+	return
+end
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
@@ -27,29 +40,28 @@ local on_attach = function(client, bufnr)
 end
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
+capabilities = cmp_cap.update_capabilities(capabilities)
 
 local lsp_flags = {
 	-- This is the default in Nvim 0.7+
 	debounce_text_changes = 150,
 }
-local lspconfig = require("lspconfig")
 
 local python_root_files = {
-  'WORKSPACE', -- added for Bazel; items below are from default config
-  'pyproject.toml',
-  'setup.py',
-  'setup.cfg',
-  'requirements.txt',
-  'Pipfile',
-  'pyrightconfig.json',
+	"WORKSPACE", -- added for Bazel; items below are from default config
+	"pyproject.toml",
+	"setup.py",
+	"setup.cfg",
+	"requirements.txt",
+	"Pipfile",
+	"pyrightconfig.json",
 }
 
 lspconfig["pyright"].setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 	flags = lsp_flags,
-	root_dir = lspconfig.util.root_pattern(unpack(python_root_files))
+	root_dir = lspconfig.util.root_pattern(unpack(python_root_files)),
 })
 lspconfig["solargraph"].setup({
 	on_attach = on_attach,
@@ -63,5 +75,5 @@ lspconfig["tsserver"].setup({
 	flags = lsp_flags,
 })
 lspconfig.vimls.setup({
-	on_attach = require("aerial").on_attach,
+	on_attach = aerial.on_attach,
 })
