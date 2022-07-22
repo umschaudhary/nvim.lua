@@ -57,8 +57,8 @@ vim.cmd [[
   filetype off
   filetype plugin on
 ]]
--- vim.g.user_emmet_leader_key=','
-vim.g.better_escape_shortcut='jj'
+vim.g.user_emmet_leader_key=','
+-- vim.g.better_escape_shortcut='jj'
 
 function _G.set_terminal_keymaps()
   local opts = {noremap = true}

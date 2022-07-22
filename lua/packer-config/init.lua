@@ -14,7 +14,7 @@ return require("packer").startup(function()
 	use("norcalli/nvim-colorizer.lua") -- show colors on live based on color codes
 	use("Darazaki/indent-o-matic")
 	use("ggandor/lightspeed.nvim") -- search tool
-	use({ "jdhao/better-escape.vim", event = "InsertEnter" })
+	-- use({ "jdhao/better-escape.vim", event = "InsertEnter" })
 	use({
 		"lewis6991/gitsigns.nvim", -- tag = 'release' -- To use the latest release
 	})
