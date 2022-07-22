@@ -1,6 +1,7 @@
 local luasnip = require("luasnip")
 local cmp = require("cmp")
 local lspkind = require("lspkind")
+require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup({
 	snippet = {
@@ -38,10 +39,13 @@ cmp.setup({
 	sources = {
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
+		{ name = "buffer" },
+		{ name = "path" },
 		{ name = "spell" },
 		{ name = "treesitter" },
 	},
 	formatting = {
+		fields = { "kind", "abbr", "menu" },
 		format = lspkind.cmp_format({
 			mode = "symbol_text",
 			maxwidth = 50,
@@ -49,5 +53,10 @@ cmp.setup({
 				return vim_item
 			end,
 		}),
+	},
+	snippet = {
+		expand = function(args)
+			luasnip.lsp_expand(args.body)
+		end,
 	},
 })
