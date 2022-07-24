@@ -32,6 +32,10 @@ return require("packer").startup(function()
 	-- LSP
 	use("williamboman/nvim-lsp-installer")
 	use("neovim/nvim-lspconfig") -- Configurations for Nvim LSP
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+	})
 	use("hrsh7th/nvim-cmp") -- Autocompletion plugin
 	use("hrsh7th/cmp-buffer") --cmp buffer source
 	use("hrsh7th/cmp-nvim-lsp") -- LSP source for nvim-cmp
@@ -44,5 +48,5 @@ return require("packer").startup(function()
 	use("lewis6991/impatient.nvim")
 	use("numToStr/Comment.nvim")
 	-- use("edluffy/specs.nvim")
-	use "Pocco81/AutoSave.nvim" --autosave
+	use("Pocco81/AutoSave.nvim") --autosave
 end)

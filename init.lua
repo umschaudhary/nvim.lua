@@ -12,6 +12,7 @@ for _, source in ipairs({
 	"configs.nvim-tree-config",
 	"configs.lsp-config.server",
 	"configs.lsp-config.nvim-cmp",
+	"configs.lsp-config.saga",
 	"configs.lua-line",
 	"configs.tabnine-config",
 	"configs.tree-sitter",
