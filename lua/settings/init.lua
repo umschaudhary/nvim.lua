@@ -12,6 +12,8 @@ set.splitbelow = true
 set.ruler = false
 set.laststatus = 2
 set.foldmethod = "indent"
+set.guifont = "Hack Nerd Font:h14"
+set.spell.spelllang = "en_us"
 --set.foldmethod = "expr"
 --set.foldexpr = "nvim_treesitter#foldexpr()"
 
@@ -70,7 +72,10 @@ function _G.set_terminal_keymaps()
   vim.api.nvim_buf_set_keymap(0, 't', '<C-l>', [[<C-\><C-n><C-W>l]], opts)
 end
 
-vim.cmd('autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()')
+
+vim.cmd[[
+  autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()
+]]
 
 -- vim.cmd[[
 --   autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2

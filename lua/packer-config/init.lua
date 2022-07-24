@@ -43,4 +43,6 @@ return require("packer").startup(function()
 	use("tpope/vim-fugitive") --git integration
 	use("lewis6991/impatient.nvim")
 	use("numToStr/Comment.nvim")
+	-- use("edluffy/specs.nvim")
+	use "Pocco81/AutoSave.nvim" --autosave
 end)

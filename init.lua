@@ -27,6 +27,7 @@ for _, source in ipairs({
 	"configs.null-ls-config",
 	"configs.nvim-lsp-installer",
 	"configs.comment",
+	"configs.autosave-config"
 }) do
 	local status_ok, fault = pcall(require, source)
 	if not status_ok then
