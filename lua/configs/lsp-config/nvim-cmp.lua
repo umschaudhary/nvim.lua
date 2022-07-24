@@ -69,12 +69,12 @@ if luasnip_ok and cmp_ok and lspkind_ok and vscode_ok then
 		}),
 
 		sources = {
-			{ name = "nvim_lsp" },
-			{ name = "luasnip" },
 			{ name = "buffer" },
+			{ name = "treesitter" },
+			{ name = "nvim_lsp" },
 			{ name = "path" },
 			{ name = "spell" },
-			{ name = "treesitter" },
+			{ name = "luasnip" },
 		},
 
 		formatting = {

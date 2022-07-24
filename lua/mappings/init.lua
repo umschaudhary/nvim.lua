@@ -1,11 +1,8 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-vim.g.mapleader = ","
-
 map("n", "<leader>v", ":NvimTreeFindFileToggle<CR>", opts)
 
--- barbar mappings
 -- Move to previous/next
 map("n", "gt", "<Cmd>tabNext<CR>", opts)
 map("n", "gT", "<Cmd>tabprevious<CR>", opts)

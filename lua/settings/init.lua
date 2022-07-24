@@ -2,6 +2,7 @@
 
 local set = vim.opt
 
+vim.g.mapleader = ","
 set.background = "dark"
 set.showmatch = true
 set.hlsearch = true
